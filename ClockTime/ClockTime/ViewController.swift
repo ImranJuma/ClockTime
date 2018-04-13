@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         //Allow the time to increase every second
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         
-        //By deault we are hiding the settings view from the user unless he requests it, and making sure the settings are also faded out 
+        //By deault we are hiding the settings view from the user unless he requests it, and making sure the settings are also faded out
         settingsView.isHidden = true
         settingsButton.alpha = 0.25
         
@@ -68,8 +68,14 @@ class ViewController: UIViewController {
         }
         
     }
+    
     //Update the timer function whenever the function is triggered
     @objc func updateTimer() {
+        
+        // update the time when the function is called to the current user time
+        let timeFormatter = DateFormatter()
+        timeFormatter.timeStyle = .medium
+        lable.text = timeFormatter.string(from: Date())
         
     }
     
