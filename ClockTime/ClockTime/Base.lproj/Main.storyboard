@@ -58,8 +58,10 @@
                                             <constraint firstAttribute="height" constant="27" id="WBC-Ao-klL"/>
                                         </constraints>
                                         <segments>
-                                            <segment title="First"/>
-                                            <segment title="Second"/>
+                                            <segment title="White"/>
+                                            <segment title="Black"/>
+                                            <segment title="Red"/>
+                                            <segment title="Green"/>
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-tn-xr1">
@@ -77,8 +79,10 @@
                                             <constraint firstAttribute="height" constant="27" id="fIW-NT-jM7"/>
                                         </constraints>
                                         <segments>
-                                            <segment title="First"/>
-                                            <segment title="Second"/>
+                                            <segment title="Black"/>
+                                            <segment title="White"/>
+                                            <segment title="Yellow"/>
+                                            <segment title="Blue"/>
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8j-gb-Px7">
