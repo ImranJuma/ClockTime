@@ -63,6 +63,9 @@
                                             <segment title="Red"/>
                                             <segment title="Green"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="clockColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jx9-DJ-ahd"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-tn-xr1">
                                         <rect key="frame" x="20" y="8" width="301" height="21"/>
@@ -84,6 +87,9 @@
                                             <segment title="Yellow"/>
                                             <segment title="Blue"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="clockBackgroundColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="f7Z-vZ-5fm"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8j-gb-Px7">
                                         <rect key="frame" x="21" y="72" width="301" height="21"/>
@@ -131,6 +137,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="clockBackgroundSeg" destination="BpB-ot-5Gk" id="ZuH-qu-Em7"/>
+                        <outlet property="clockColorSeg" destination="Yrp-m4-FjP" id="bB3-pw-Sqa"/>
                         <outlet property="lable" destination="uxK-5P-jfd" id="bhK-Kf-7cK"/>
                         <outlet property="settingsButton" destination="oy6-1G-Yu7" id="GP5-qo-2xB"/>
                         <outlet property="settingsView" destination="9Xo-re-3Ar" id="5Fr-wp-Ivc"/>

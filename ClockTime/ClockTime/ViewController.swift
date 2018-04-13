@@ -19,6 +19,16 @@ class ViewController: UIViewController {
     //Another outlet for our settingsView, so we can also make it appear at times we want and put it away when the user does not want to change the settings
     @IBOutlet weak var settingsView: UIView!
     
+    //This will allow us to modify the segment for the color color
+    @IBOutlet weak var clockColorSeg: UISegmentedControl!
+    
+    // This will allow for us to modify the background color segment
+    @IBOutlet weak var clockBackgroundSeg: UISegmentedControl!
+    
+    
+    
+    
+    
     //Adding in varible so we can add different customization feautures for the user
     var timer = Timer()
     
@@ -98,6 +108,29 @@ class ViewController: UIViewController {
         lable.text = timeFormatter.string(from: Date())
         
     }
+    
+    //Actions for when they want to change the clock color
+    @IBAction func clockColor(_ sender: Any) {
+        // When the user selects a secition of our segment, then we will trigger the color to be changed to the selection that they have made in their series
+        
+        
+        
+        
+    }
+    
+    //Actions for when the user wants to chnage the background color
+    @IBAction func clockBackgroundColor(_ sender: Any) {
+        // When the user selects a secition of our segment, then we will trigger the color to be changed to the selection that they have made in their series
+        
+        
+        
+
+    }
+    
+    
+    
+    
+    
 }
 
 
