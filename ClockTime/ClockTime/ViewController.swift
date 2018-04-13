@@ -37,6 +37,12 @@ class ViewController: UIViewController {
         settingsView.isHidden = true
         settingsButton.alpha = 0.25
         
+        // Making the UI look alot better by adding some rounded edges to the View the higher the radius the better the curves
+        // Making the application look alot better
+        settingsView.layer.cornerRadius = 5
+        settingsButton.layer.cornerRadius = 5
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
