@@ -14,6 +14,7 @@
 		6ABDF447208145560083DD4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDF445208145560083DD4A /* LaunchScreen.storyboard */; };
 		6ABDF452208145560083DD4A /* ClockTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDF451208145560083DD4A /* ClockTimeTests.swift */; };
 		6ABDF45D208145560083DD4A /* ClockTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABDF45C208145560083DD4A /* ClockTimeUITests.swift */; };
+		6ABDF46B208145C30083DD4A /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDF46A208145C30083DD4A /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6ABDF458208145560083DD4A /* ClockTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABDF45C208145560083DD4A /* ClockTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTimeUITests.swift; sourceTree = "<group>"; };
 		6ABDF45E208145560083DD4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ABDF46A208145C30083DD4A /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				6ABDF443208145560083DD4A /* Assets.xcassets */,
 				6ABDF445208145560083DD4A /* LaunchScreen.storyboard */,
 				6ABDF448208145560083DD4A /* Info.plist */,
+				6ABDF46A208145C30083DD4A /* digital-7.ttf */,
 			);
 			path = ClockTime;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				6ABDF447208145560083DD4A /* LaunchScreen.storyboard in Resources */,
 				6ABDF444208145560083DD4A /* Assets.xcassets in Resources */,
 				6ABDF442208145560083DD4A /* Main.storyboard in Resources */,
+				6ABDF46B208145C30083DD4A /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
