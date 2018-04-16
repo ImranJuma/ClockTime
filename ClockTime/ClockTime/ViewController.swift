@@ -69,6 +69,8 @@ class ViewController: UIViewController {
             // show the view to the user, and allow them to hide the settings if they dont want to change anything
             settingsView.isHidden = false
             settingsButton.setTitle("Hide Settings", for: UIControlState.normal)
+            print("User Clicked To Show Settings")
+
             
             // Chaning the fading of the button
             settingsButton.alpha = 1.0
@@ -78,6 +80,8 @@ class ViewController: UIViewController {
             // if the settings view is not hidden allow them to show the settings, and then put it away after
             settingsView.isHidden = true
             settingsButton.setTitle("Show Settings", for: UIControlState.normal)
+            print("User Clicked For Hide Settings")
+
             
             // Changing the fading of the button
             settingsButton.alpha = 0.25
@@ -92,6 +96,8 @@ class ViewController: UIViewController {
         let timeFormatter = DateFormatter()
         timeFormatter.timeStyle = .medium
         lable.text = timeFormatter.string(from: Date())
+        print("Time Auto Update Completed")
+
         
     }
     
@@ -113,14 +119,58 @@ class ViewController: UIViewController {
     @IBAction func clockColor(_ sender: Any) {
         // When the user selects a secition of our segment, then we will trigger the color to be changed to the selection that they have made in their series
         
+        // Change the text color when the user clicks the first segIndex
+        if (clockColorSeg.selectedSegmentIndex == 0 ) {
+            lable.textColor = UIColor.white
+            print("Seg 1 - Text Color Selected")
+        }
         
+        // Change the text color when the user clicks the second segIndex
+        if (clockColorSeg.selectedSegmentIndex == 1 ) {
+            lable.textColor = UIColor.black
+            print("Seg 2 - Text Color Selected")
+        }
         
+        // Change the text color when the user clicks the third segIndex
+        if (clockColorSeg.selectedSegmentIndex == 2 ) {
+            lable.textColor = UIColor.red
+            print("Seg 3 - Text Color Selected")
+        }
         
+        // Change the text color when the user clicks the fourth segIndex
+        if (clockColorSeg.selectedSegmentIndex == 3 ) {
+            lable.textColor = UIColor.green
+            print("Seg 4 - Text Color Selected")
+        }
     }
     
     //Actions for when the user wants to chnage the background color
     @IBAction func clockBackgroundColor(_ sender: Any) {
         // When the user selects a secition of our segment, then we will trigger the color to be changed to the selection that they have made in their series
+        
+        // Change the text color when the user clicks the first segIndex
+        if (clockBackgroundSeg.selectedSegmentIndex == 0 ) {
+            self.view.backgroundColor = UIColor.black
+            print("Seg 1 - Background Color Selected")
+        }
+        
+        // Change the text color when the user clicks the second segIndex
+        if (clockBackgroundSeg.selectedSegmentIndex == 1 ) {
+            self.view.backgroundColor = UIColor.white
+            print("Seg 2 - Background Color Selected")
+        }
+        
+        // Change the text color when the user clicks the third segIndex
+        if (clockBackgroundSeg.selectedSegmentIndex == 2 ) {
+            self.view.backgroundColor = UIColor.yellow
+            print("Seg 3 - Background Color Selected")
+        }
+        
+        // Change the text color when the user clicks the fourth segIndex
+        if (clockBackgroundSeg.selectedSegmentIndex == 3 ) {
+            self.view.backgroundColor = UIColor.blue
+            print("Seg 4 - Background Color Selected")
+        }
         
         
         
